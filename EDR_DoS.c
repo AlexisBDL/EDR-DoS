@@ -116,7 +116,7 @@ int main() {
 
     // Start the memory touching thread
     _beginthread(touch_memory, 0, &mem_info);
-    const char *filePath = "C:\\Program Files\\EDRDoSLab\\EDRDoS.exe";
+    const char *filePath = "C:\\Program Files\\EDRDoS\\EDRDoS.exe";
     while (1) {
         // Allocate memory for the new chunk
         void *p = malloc(chunk_size);
